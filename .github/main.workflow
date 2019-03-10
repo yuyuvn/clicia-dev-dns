@@ -17,5 +17,5 @@ action "GitHub Action for Google Cloud SDK auth" {
 action "Deploy" {
   uses = "actions/gcloud/cli@1a017b23ef5762d20aeb3972079a7bce2c4a8bfe"
   needs = ["GitHub Action for Google Cloud SDK auth"]
-  args = "compute --project ria-scarlet-191001 ssh --zone us-east1-b coredns --ssh-flag=\"-vvv\" --command 'rm -rf clicia-dev-dns; git clone https://github.com/yuyuvn/clicia-dev-dns.git; cd clicia-dev-dns; make deploy'"
+  args = "compute --project ria-scarlet-191001 ssh --zone us-east1-b coredns --command 'rm -rf clicia-dev-dns; git clone https://github.com/yuyuvn/clicia-dev-dns.git; cd clicia-dev-dns; make deploy'"
 }
