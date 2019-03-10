@@ -1,0 +1,11 @@
+clicia.dev {
+    file /etc/coredns/hosts/clicia.dev
+    log
+    errors
+}
+. {
+    chaos
+    whoami  # coredns.io/plugins/whoami
+    log     # coredns.io/plugins/log
+    errors  # coredns.io/plugins/errors
+}
