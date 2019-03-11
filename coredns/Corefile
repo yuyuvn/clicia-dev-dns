@@ -1,4 +1,4 @@
-clicia.dev {
+clicia.xyz {
     root /etc/coredns/zones
 
     template IN A clicia.xyz {
