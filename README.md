@@ -29,4 +29,7 @@ docker-compose --rm run test
 ```
 
 ## TODO
-Run test in github action
+* Run test in github action
+* Support DNSSEC
+* Monitor (Prometheus)
+* Support TLS/gRPC
