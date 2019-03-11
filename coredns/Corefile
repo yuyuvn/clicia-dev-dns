@@ -1,4 +1,12 @@
 clicia.dev {
+
+    template IN A clicia.dev {
+      match "^ip-(?P<a>[0-9]+)-(?P<b>[0-9]+)-(?P<c>[0-9]+)-(?P<d>[0-9]+)[.]clicia[.]dev[.]$"
+      match "^(?P<a>[0-9]+)[.](?P<b>[0-9]+)[.](?P<c>[0-9]+)[.](?P<d>[0-9]+)[.]clicia[.]dev[.]$"
+      answer "{{ .Name }} 3600 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
+      fallthrough
+    }
+
     file /etc/coredns/hosts/clicia.dev
     log
     errors
