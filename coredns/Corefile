@@ -3,9 +3,6 @@ clicia.dev {
     log
     errors
 }
-homeup.local {
-    file /etc/coredns/hosts/homeup.local
-}
 . {
     forward . 8.8.8.8 8.8.4.4 2001:4860:4860::8888 2001:4860:4860::8844
     log     # coredns.io/plugins/log

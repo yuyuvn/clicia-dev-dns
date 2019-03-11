@@ -14,11 +14,14 @@ $ORIGIN clicia.dev.
 www 3600 IN A     127.0.0.1
     3600 IN AAAA  ::1
 
-local 3600 IN A     127.0.0.1
-      3600 IN AAAA  ::1
-
 ns1 21600 IN A 34.73.126.227
     21600 IN AAAA ::ffff:2249:7ee3
 
 ns2 21600 IN A 34.73.126.227
     21600 IN AAAA ::ffff:2249:7ee3
+
+local 3600 IN A     127.0.0.1
+      3600 IN AAAA  ::1
+
+*.local 3600 IN A     127.0.0.1
+        3600 IN AAAA  ::1
