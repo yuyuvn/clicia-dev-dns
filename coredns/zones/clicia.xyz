@@ -11,3 +11,5 @@ $ORIGIN clicia.xyz.
 
 www 3600 IN A     127.0.0.1
     3600 IN AAAA  ::1
+
+google8a7889bfa443b7c3 3600 IN CNAME google.com
