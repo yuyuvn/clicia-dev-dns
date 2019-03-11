@@ -3,6 +3,9 @@ clicia.dev {
     log
     errors
 }
+homeup.local {
+    file /etc/coredns/hosts/homeup.local
+}
 . {
     chaos
     whoami  # coredns.io/plugins/whoami
