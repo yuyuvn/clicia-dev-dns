@@ -25,7 +25,8 @@ Resolve-DnsName -Name ns1.clicia.dev -Server 127.0.0.1
 
 ### Docker-compose
 ```
-docker-compose --rm run test
+docker-compose run --rm test
+docker-compose run --rm --entrypoint=/bin/sh test
 ```
 
 ## TODO
