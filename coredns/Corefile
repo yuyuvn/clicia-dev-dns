@@ -1,8 +1,3 @@
-whoami.clicia.dev {
-    whoami
-    log
-    errors
-}
 clicia.dev {
 
     template IN A clicia.dev {
