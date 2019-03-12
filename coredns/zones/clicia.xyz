@@ -1,6 +1,6 @@
 $ORIGIN clicia.xyz.
 @	21600 IN	SOA ns1.clicia.dev. cloud-dns-hostmaster.google.com.  (
-				2019031152 ; serial
+				2019031153 ; serial
 				7200       ; refresh (2 hours)
 				3600       ; retry (1 hour)
 				1209600    ; expire (2 weeks)
