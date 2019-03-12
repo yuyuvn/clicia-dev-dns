@@ -12,4 +12,4 @@ $ORIGIN clicia.xyz.
 www 3600 IN A     127.0.0.1
     3600 IN AAAA  ::1
 
-app.ferret-one.com 3600 IN CNAME hu-cms-elb-2081513105.ap-northeast-1.elb.amazonaws.com
+app.ferret-one.com 3600 IN CNAME hu-cms-elb-2081513105.ap-northeast-1.elb.amazonaws.com.
