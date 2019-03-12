@@ -4,6 +4,7 @@ clicia.xyz {
     template IN A clicia.xyz {
       match "^ip-(?P<a>[0-9]+)-(?P<b>[0-9]+)-(?P<c>[0-9]+)-(?P<d>[0-9]+)[.]clicia[.]xyz[.]$"
       match "^(?P<a>[0-9]+)[.](?P<b>[0-9]+)[.](?P<c>[0-9]+)[.](?P<d>[0-9]+)[.]clicia[.]xyz[.]$"
+      match "^(?P<a>[0-9]+)[.](?P<b>[0-9]+)[.](?P<c>[0-9]+)[.](?P<d>[0-9]+)[.]console[.]clicia[.]xyz[.]$"
       answer "{{ .Name }} 3600 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
       fallthrough
     }
@@ -14,13 +15,6 @@ clicia.xyz {
 }
 clicia.dev {
     root /etc/coredns/zones
-
-    template IN A clicia.dev {
-      match "^ip-(?P<a>[0-9]+)-(?P<b>[0-9]+)-(?P<c>[0-9]+)-(?P<d>[0-9]+)[.]clicia[.]dev[.]$"
-      match "^(?P<a>[0-9]+)[.](?P<b>[0-9]+)[.](?P<c>[0-9]+)[.](?P<d>[0-9]+)[.]clicia[.]dev[.]$"
-      answer "{{ .Name }} 3600 IN A {{ .Group.a }}.{{ .Group.b }}.{{ .Group.c }}.{{ .Group.d }}"
-      fallthrough
-    }
 
     file clicia.dev
     log
