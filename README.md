@@ -32,5 +32,4 @@ docker-compose run --rm --entrypoint=/bin/sh test
 ## TODO
 * Run test in github action
 * Support DNSSEC
-* Monitor (Prometheus)
 * Support TLS/gRPC
