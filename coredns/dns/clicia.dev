@@ -1,0 +1,6 @@
+clicia.dev {
+    root /etc/coredns/zones
+
+    file clicia.dev
+    import common
+}
