@@ -29,4 +29,5 @@ local 3600 IN A     127.0.0.1
         3600 IN AAAA  ::1
 
 google8a7889bfa443b7c3 3600 IN CNAME google.com.
+_acme-challenge.iot 3600 IN CNAME 611d0062-5971-44b6-9793-9b45a2789fcc.auth.acme-dns.io.
 *.iot 3600 IN CNAME clicia.mynetgear.com.
